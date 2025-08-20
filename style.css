@@ -1,0 +1,89 @@
+small {
+    color: dimgray;
+    font-weight: 500;
+}
+
+#experience small {
+    color: white;
+}
+
+#experience {
+    background-image: url(./images/architect.png);
+    background-repeat: no-repeat;
+    background-position: right 90%;
+    background-size: 95% auto;
+    position: relative;
+}
+
+#hero>div {
+    opacity: 0;
+    transform: translateY(10px);
+}
+
+nav {
+    opacity: 0;
+}
+
+/* Animation class */
+.animate-hero {
+    animation: vis 1s ease-in-out forwards;
+}
+
+.animate-nav {
+    animation: vis2 1s ease-in-out forwards;
+}
+
+@keyframes vis {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes vis2 {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fade-in {
+  from { opacity: 0; transform: translateX(-100%); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.sld {
+  animation: fade-in both 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes scale-in {
+  from { opacity: 0; transform: scale(0); }
+  to { opacity: 1; transform: scale(100%); }
+}
+
+.scl {
+  animation: scale-in both 1s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 40%;
+}
+@keyframes fade-up {
+  from {transform: translateY(10px);}
+  to {transform: translateY(0);}
+}
+#success span {
+  animation: fade-up 2s ease forwards infinite alternate;
+}
+
+/* stagger the delays */
+#success span:nth-child(1) { animation-delay: 0s; }
+#success span:nth-child(2) { animation-delay: 0.4s; }
+#success span:nth-child(3) { animation-delay: 0.8s; }
+#success span:nth-child(4) { animation-delay: 1.2s; }

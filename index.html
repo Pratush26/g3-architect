@@ -4,54 +4,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
     <title>G3 Architects</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <style>
-        small {
-            color: dimgray;
-            font-weight: 500;
-        }
-        #experience small{
-color: white;
-        }
-        #experience {
-    background-image: url(./images/architect.png);
-    background-repeat: no-repeat;
-    background-position: right 90%;
-    background-size: 95% auto;
-    position: relative;
-}
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header class="bg-orange-50">
         <nav class="flex items-center justify-between w-11/12 mx-auto py-4">
-            <a href="#hero" class="font-bold text-xl sm:text-3xl">G3 Architects</a>
+            <a href="/" class="font-bold text-xl sm:text-3xl">G3 Architects</a>
             <span class="space-x-4 hidden sm:block">
                 <a href="#hero">Home</a>
-                <a href="#hero">About</a>
-                <a href="#hero">Contact Us</a>
+                <a href="#feature">About</a>
+                <a href="#experience">Contact Us</a>
                 <a href="#hero">Login</a>
             </span>
-            <img src="./images/menu.svg" alt="menu icon" class="sm:hidden w-6 h-6">
+            <img src="./images/menu.svg" id="menu" alt="menu icon" class="sm:hidden w-6 h-6">
         </nav>
+        <div id="menu-item" class="hidden flex-col items-end w-11/12 sm:hidden">
+            <a href="#hero">Home</a>
+            <a href="#hero">About</a>
+            <a href="#hero">Contact Us</a>
+            <a href="#hero">Login</a>
+        </div>
     </header>
     <section id="hero" tabindex="0" class="bg-orange-50 py-6">
         <div class="w-5/6 mx-auto grid grid-flow-row place-content-around gap-4 text-center">
             <div class="min-h-[50vh] flex flex-col items-center justify-center gap-6">
                 <h1 class="font-bold text-5xl">Brand New <br> Group of Architects</h1>
-                <p class="font-semibold text-sm text-gray-700 w-5/6">There are many variations of passages of Lorem Ipsum available, but
+                <p class="font-semibold text-sm text-gray-700 w-5/6">There are many variations of passages of Lorem
+                    Ipsum available, but
                     the majority have suffered alteration in some form, by injected humour, or randomised words which
                     don't look even</p>
-                <button class="bg-amber-500 text-white font-semibold px-4 py-2 rounded-md">Explore More</button>
+                <button onclick='alert("Thank you for exploring us")'
+                    class="bg-amber-500 text-white font-semibold px-4 py-2 rounded-md hover:shadow-xl/40 hover:scale-105 shadow-gray-700 transition-all duration-300 cursor-pointer">Explore
+                    More</button>
             </div>
             <img src="./images/banner.png" alt="banner image">
         </div>
     </section>
     <main class="w-11/12 lg:w-3/4 mx-auto">
-        <section tabindex="1" class="grid grid-cols-1 sm:grid-cols-2 justify-items-center items-center gap-10 my-10">
+        <section id="feature" tabindex="0" class="grid grid-cols-1 sm:grid-cols-2 justify-items-center items-center gap-10 my-10">
             <div class="grid grid-cols-2 gap-2">
                 <img src="./images/team1.png" alt="image of team">
                 <img src="./images/team2.png" alt="image of team">
@@ -59,79 +53,93 @@ color: white;
                 <img src="./images/team4.png" alt="image of team">
             </div>
             <div>
-                <h4 class="font-semibold text-gray-500 text-3xl">Quick list <span class="text-black font-bold">of Our</span></h4>
+                <h4 class="font-semibold text-gray-500 text-3xl">Quick list <span class="text-black font-bold">of
+                        Our</span></h4>
                 <h3 class="font-semibold text-amber-500 text-3xl">Features</h3>
                 <div class="my-6">
                     <small>There are many variations of passages of Lorem Ipsum available, but the majority have
                         suffered alteration in some form, by injected humour, or randomised words which don't look
                         even</small>
                 </div>
-                <button class="bg-amber-500 text-white font-semibold px-4 py-2 rounded-md">Explore More</button>
+                <button onclick='alert("Thank you for exploring us")'
+                    class="scl bg-amber-500 text-white font-semibold px-4 py-2 rounded-md hover:shadow-xl/40 hover:scale-105 shadow-gray-700 transition-all duration-300 cursor-pointer">Explore
+                    More</button>
             </div>
         </section>
-        <section tabindex="2" class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
+        <section tabindex="0" class="grid grid-cols-1 md:grid-cols-2 gap-6 my-10">
             <article class="flex flex-col gap-6">
                 <div class="border-l-4 border-amber-500 pl-3">
                     <h2 class="font-bold text-3xl">Features you will <br> love & enjoy</h2>
                 </div>
                 <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
                     alteration in some form, by injected humour, or randomised words which don't look even</small>
-                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                <div class="sld p-4 shadow-lg shadow-gray-600/40 rounded-xl">
                     <h6 class="font-semibold text-md">Desktop & Mobile Version</h6>
-                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
                         alteration in some form, by injected humour, or randomised...........</small>
                 </div>
-                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                <div class="sld p-4 shadow-lg shadow-gray-600/40 rounded-xl">
                     <h6 class="font-semibold text-md">Drag & Drop Builder</h6>
-                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
                         alteration in some form, by injected humour, or randomised...........</small>
                 </div>
-                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                <div class="sld p-4 shadow-lg shadow-gray-600/40 rounded-xl">
                     <h6 class="font-semibold text-md">Awesome Modern Design</h6>
-                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
                         alteration in some form, by injected humour, or randomised...........</small>
                 </div>
-                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                <div class="sld p-4 shadow-lg shadow-gray-600/40 rounded-xl">
                     <h6 class="font-semibold text-md">Super Easy to Edit</h6>
-                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered
                         alteration in some form, by injected humour, or randomised...........</small>
                 </div>
             </article>
             <div id="experience" class="min-h-[70vh]">
-                <div class="w-fit absolute bottom-0 left-0 py-3 px-6 bg-amber-500 text-white rounded-xl shadow-lg/40 shadow-gray-600">
+                <div
+                    class="w-fit scl absolute bottom-0 left-0 py-3 px-6 bg-amber-500 text-white rounded-xl shadow-lg/40 shadow-gray-600">
                     <h5 class="font-bold text-3xl">10+Year</h5>
                     <small>Experience</small>
                 </div>
             </div>
         </section>
-        <section tabindex="3" class="text-center space-y-4">
+        <section tabindex="0" class="text-center space-y-4">
             <h4 class="font-bold text-2xl text-left">Some Facts</h4>
-            <p class="text-left text-sm text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            <p class="text-left text-sm text-gray-500">There are many variations of passages of Lorem Ipsum available,
+                but the majority have suffered
                 alteration.</p>
-            <div class="flex items-center justify-center gap-4 flex-wrap sm:flex-nowrap">
-                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
+            <div id="success" class="flex items-center justify-center gap-4 flex-wrap sm:flex-nowrap">
+                <span
+                    class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/ribon.png" alt="ribon icon">
                     <h6>54</h6>
                     <small>Awards Winnings</small>
                 </span>
-                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
+                <span
+                    class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/projects.png" alt="projects icon">
                     <h6>1458</h6>
                     <small>Project Finished</small>
                 </span>
-                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
+                <span
+                    class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/customers.png" alt="customers icon">
                     <h6>590</h6>
                     <small>Clients Worked</small>
                 </span>
-                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
+                <span
+                    class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/email.png" alt="email icon">
                     <h6>22578</h6>
                     <small>Email Send</small>
                 </span>
             </div>
             <h4 class="font-bold text-2xl mt-10">Our Sponspors</h4>
-            <p class="text-sm text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+            <p class="text-sm text-gray-500">There are many variations of passages of Lorem Ipsum available, but the
+                majority have suffered
                 alteration.</p>
             <div class="flex items-center justify-evenly m-8 gap-4 flex-wrap grayscale-100">
                 <img src="./images/sponsors/spotify.png" alt="spotify logo">
@@ -147,6 +155,29 @@ color: white;
             All rights reserved copyright@2023 startup landing page design
         </p>
     </footer>
+    <script>
+        window.addEventListener("load", () => {
+            document.querySelector("#hero>div").classList.add("animate-hero");
+            document.querySelector("nav").classList.add("animate-nav");
+        });
+
+        //hamburger function
+        let menu = document.getElementById("menu");
+        let menuItem = document.getElementById("menu-item");
+        let cross = false;
+        menu.addEventListener("click", function (e) {
+            if (cross) {
+                menu.src = "./images/menu.svg"
+                menuItem.classList.remove('flex')
+                menuItem.classList.add('hidden')
+            } else {
+                menu.src = "./images/cross.svg"
+                menuItem.classList.remove('hidden')
+                menuItem.classList.add('flex')
+            }
+            cross = !cross
+        });
+    </script>
 </body>
 
 </html>
