@@ -1,101 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G3 Architects</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style>
+        small {
+            color: dimgray;
+            font-weight: 500;
+        }
+        #experience small{
+color: white;
+        }
+        #experience {
+    background-image: url(./images/architect.png);
+    background-repeat: no-repeat;
+    background-position: right 90%;
+    background-size: 95% auto;
+    position: relative;
+}
+
+    </style>
 </head>
+
 <body>
-    <nav>
-        <a href="#hero">G3 Architects</a>
-        <span>
-            <a href="#hero">Home</a>
-            <a href="#hero">About</a>
-            <a href="#hero">Contact Us</a>
-            <a href="#hero">Login</a>
-        </span>
-    </nav>
-    <main>
-        <section>
-            <h2>Brand New</h2>
-            <h1>Group of Architects</h1>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
-            <button>Explore More</button>
+    <header class="bg-orange-50">
+        <nav class="flex items-center justify-between w-11/12 mx-auto py-4">
+            <a href="#hero" class="font-bold text-3xl">G3 Architects</a>
+            <span class="space-x-4 font-semibold">
+                <a href="#hero">Home</a>
+                <a href="#hero">About</a>
+                <a href="#hero">Contact Us</a>
+                <a href="#hero">Login</a>
+            </span>
+        </nav>
+    </header>
+    <section id="hero" class="bg-orange-50 py-6">
+        <div class="w-5/6 mx-auto grid grid-flow-row place-content-around gap-4 text-center">
+            <div class="min-h-[50vh] flex flex-col items-center justify-end gap-6">
+                <h1 class="font-bold text-5xl">Brand New <br> Group of Architects</h1>
+                <p class="font-semibold text-sm text-gray-700 w-5/6">There are many variations of passages of Lorem Ipsum available, but
+                    the majority have suffered alteration in some form, by injected humour, or randomised words which
+                    don't look even</p>
+                <button class="bg-amber-500 text-white font-semibold px-4 py-2 rounded-md">Explore More</button>
+            </div>
             <img src="./images/banner.png" alt="banner image">
-        </section>
-        <section>
-            <div>
+        </div>
+    </section>
+    <main class="w-3/4 mx-auto">
+        <section class="grid grid-cols-2 justify-items-center items-center gap-10 my-10">
+            <div class="grid grid-cols-2 gap-2">
                 <img src="./images/team1.png" alt="image of team">
                 <img src="./images/team2.png" alt="image of team">
                 <img src="./images/team3.png" alt="image of team">
                 <img src="./images/team4.png" alt="image of team">
             </div>
             <div>
-                <h4>Quick list <b>of Our</b></h4>
-                <h3>Features</h3>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
-                <button>Explore More</button>
+                <h4 class="font-semibold text-gray-500 text-3xl">Quick list <span class="text-black font-bold">of Our</span></h4>
+                <h3 class="font-semibold text-amber-500 text-3xl">Features</h3>
+                <div class="my-6">
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have
+                        suffered alteration in some form, by injected humour, or randomised words which don't look
+                        even</small>
+                </div>
+                <button class="bg-amber-500 text-white font-semibold px-4 py-2 rounded-md">Explore More</button>
             </div>
         </section>
-        <section>
-            <article>
-                <span>
-                    <h2>Features you will</h2>
-                    <h3>love & enjoy</h3>
-                </span>
-                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even</p>
-                <div>
-                    <h6>Desktop & Mobile Version</h6>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p> 
+        <section class="grid grid-cols-2 gap-6 my-10">
+            <article class="flex flex-col gap-6">
+                <div class="border-l-4 border-amber-500 pl-3">
+                    <h2 class="font-bold text-3xl">Features you will <br> love & enjoy</h2>
                 </div>
-                <div>
-                    <h6>Drag & Drop Builder</h6>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p> 
+                <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                    alteration in some form, by injected humour, or randomised words which don't look even</small>
+                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                    <h6 class="font-semibold text-md">Desktop & Mobile Version</h6>
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised...........</small>
                 </div>
-                <div>
-                    <h6>Awesome Modern Design</h6>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p> 
+                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                    <h6 class="font-semibold text-md">Drag & Drop Builder</h6>
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised...........</small>
                 </div>
-                <div>
-                    <h6>Super Easy to Edit</h6>
-                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised...........</p> 
+                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                    <h6 class="font-semibold text-md">Awesome Modern Design</h6>
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised...........</small>
+                </div>
+                <div class="p-4 shadow-lg shadow-gray-600/40 rounded-xl">
+                    <h6 class="font-semibold text-md">Super Easy to Edit</h6>
+                    <small>There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                        alteration in some form, by injected humour, or randomised...........</small>
                 </div>
             </article>
-            <div>
-                <span>
-                    <h5>10+Year</h5>
+            <div id="experience">
+                <div class="w-fit absolute bottom-0 left-0 py-3 px-6 bg-amber-500 text-white rounded-xl shadow-lg/40 shadow-gray-600">
+                    <h5 class="font-bold text-3xl">10+Year</h5>
                     <small>Experience</small>
-                </span>
+                </div>
             </div>
         </section>
-        <section>
-            <h4>Some Facts</h4>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-            <div>
-                <span>
+        <section class="text-center space-y-4">
+            <h4 class="font-bold text-2xl text-left">Some Facts</h4>
+            <p class="text-left text-sm text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration.</p>
+            <div class="flex items-center justify-center gap-4">
+                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/ribon.png" alt="ribon icon">
                     <h6>54</h6>
-                    <p>Awards Winnings</p>
+                    <small>Awards Winnings</small>
                 </span>
-                <span>
+                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/projects.png" alt="projects icon">
                     <h6>1458</h6>
-                    <p>Project Finished</p>
+                    <small>Project Finished</small>
                 </span>
-                <span>
+                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/customers.png" alt="customers icon">
                     <h6>590</h6>
-                    <p>Clients Worked</p>
+                    <small>Clients Worked</small>
                 </span>
-                <span>
+                <span class="border-1 font-bold text-gray-700 border-amber-500 rounded flex flex-col items-center justify-center p-4">
                     <img src="./images/icons/email.png" alt="email icon">
                     <h6>22578</h6>
-                    <p>Email Send</p>
+                    <small>Email Send</small>
                 </span>
             </div>
-            <h4>Our Sponspors</h4>
-            <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
-            <div>
+            <h4 class="font-bold text-2xl mt-10">Our Sponspors</h4>
+            <p class="text-sm text-gray-500">There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration.</p>
+            <div class="flex items-center justify-evenly m-8 gap-4 flex-wrap grayscale-100">
                 <img src="./images/sponsors/spotify.png" alt="spotify logo">
                 <img src="./images/sponsors/amazon.png" alt="amazon logo">
                 <img src="./images/sponsors/google.png" alt="google logo">
@@ -104,6 +141,11 @@
             </div>
         </section>
     </main>
-    <footer>All rights reserved copyright@2023 startup landing page design</footer>
+    <footer>
+        <p class="bg-stone-200 w-3/4 text-center my-4 mx-auto p-4 text-sm text-gray-700">
+            All rights reserved copyright@2023 startup landing page design
+        </p>
+    </footer>
 </body>
+
 </html>
